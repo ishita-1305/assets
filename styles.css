@@ -6,7 +6,8 @@
 .hero{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.jpg); */
+    background-color: black;
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -19,6 +20,11 @@
     background: #fff;
     padding: 5px;
     overflow: hidden;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .button-box{
     width:220px;
@@ -66,22 +72,28 @@
     width: 100%;
     padding: 10px 0;
     margin:5px 0;
-    border-left: 0;
-    border-top:0;
-    border-right:0;
-    border-bottom:1px solid #999;
     outline:none;
-    background:transparent;
+    /* background:transparent; */
+    border-radius: 0.6875rem;
+    border: 1.8px solid rgba(232, 142, 255, 0.2);
+    background: rgba(225, 225, 225, 0.06);
+    backdrop-filter: blur(25px);
 }
 .submit-btn{
-    width:85%;
-    padding:10px 30px;
+    /* width:85%; */
+    padding:2px 20px;
     cursor:pointer;
     display:block;
     margin:auto;
-    background: linear-gradient(to right, #ff105f,#ffad06);
-    border:0;
+    /* background: linear-gradient(to right, #ff105f,#ffad06); */
+    /* border:0; */
     outline: none;
+    width: 30%;
+  border-radius: 2.25rem;
+  border: 1.8px solid rgba(232, 142, 255, 0.2);
+  background: #bc00fe;
+  backdrop-filter: blur(25px);
+  color: white;
 }
 .check-box{
     margin: 30px 10px 30px 0;
@@ -97,5 +109,23 @@ span{
 }
 #register{
     left:450px;
+}
+.cards_a{
+    position: absolute;
+    top: 349px;
+    left: 262px;
+}
+.cards_b{
+    position: absolute;
+    top: 280px;
+    left: 719px
+}
+.cards_a img{
+    width:67%;
+    transform: rotate(-2deg);
+}
+.cards_b img{
+    width:67%;
+    transform: rotate(20deg);
 }
 
