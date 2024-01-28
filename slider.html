@@ -17,5 +17,16 @@
             <img src="grey.png" alt="">
         </div>
     </div>
+    <script>
+        const gallery=document.querySelector('.gallery');
+        const images=document.querySelectorAll('.gallery img');
+        const img_angle=360/gallery.children.length;
+        images.forEach((image,i) =>{
+            image.style.transform=`rotate3d(0,1,0,${(i+1)*img_angle}deg) translateZ(25rem)`;
+            image.onclick=()=>{
+                gallery.style.transform= ` perspective(2000px) rotate3d(0,-1,0,${(i+1)*img_angle}deg)`;
+            }
+        });
+    </script>
 </body>
 </html>
