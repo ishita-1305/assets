@@ -24,7 +24,7 @@
         images.forEach((image,i) =>{
             image.style.transform=`rotate3d(0,1,0,${(i+1)*img_angle}deg) translateZ(25rem)`;
             image.onclick=()=>{
-                gallery.style.transform= ` perspective(2000px) rotate3d(0,-1,0,${(i+1)*img_angle}deg)`;
+                gallery.style.transform= ` perspective(2000px) rotateX(-15deg) rotateY(-${(i+1)*img_angle}deg)`;
             }
         });
     </script>

@@ -16,8 +16,9 @@
     width:15rem;
     transform-style: preserve-3d;
     transition: 2s;
-    transform:perspective(2000px) rotate3d(0,1,0,0deg) ;
+    transform:perspective(2000px) rotateX(-15deg) rotateY(0deg);
     /* animation: circular-rotate 18s linear infinite; */
+    /* rotate3d(0,1,0,0deg) */
 }
 @keyframes circular-rotate {
     to{
